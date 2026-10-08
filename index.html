@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>雙軌練習誌 · 健身 × 吉他</title>
+<meta name="description" content="一個純靜態的個人習慣追蹤器：健身與吉他雙軌打卡、連續天數、月曆熱力圖、週目標、曲目清單、和弦移調與指法圖。">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <img src="images/logo.svg" alt="" class="brand-mark" width="40" height="40">
+      <div class="brand-text">
+        <h1>雙軌練習誌</h1>
+        <p id="brandSub">健身 × 吉他 · 每天一點點</p>
+      </div>
+    </div>
+    <nav class="tabs" id="tabs" aria-label="主選單">
+      <button class="tab is-active" data-view="dashboard" type="button">總覽</button>
+      <button class="tab" data-view="log" type="button">打卡</button>
+      <button class="tab" data-view="food" type="button">吃什麼</button>
+      <button class="tab" data-view="songs" type="button">曲目</button>
+      <button class="tab" data-view="chords" type="button">和弦工具</button>
+      <button class="tab" data-view="settings" type="button">設定</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ 總覽 ============ -->
+  <section class="view is-active" id="view-dashboard">
+
+    <div class="slogan">
+      <p id="sloganText"></p>
+      <button class="slogan-reroll" id="sloganReroll" type="button" aria-label="換一句">↻</button>
+    </div>
+
+    <div class="quick card">
+      <div class="quick-head">
+        <h2>今天 · <span id="todayLabel"></span></h2>
+        <p class="muted" id="todaySummary">還沒有紀錄</p>
+      </div>
+      <div class="quick-actions">
+        <button class="qbtn qbtn-fit" type="button" data-quick="fitness">
+          <span class="qbtn-ico" aria-hidden="true">🏋️</span>
+          <span class="qbtn-label">記一筆健身</span>
+          <span class="qbtn-state" id="quickStateFitness">未完成</span>
+        </button>
+        <button class="qbtn qbtn-gtr" type="button" data-quick="guitar">
+          <span class="qbtn-ico" aria-hidden="true">🎸</span>
+          <span class="qbtn-label">記一筆吉他</span>
+          <span class="qbtn-state" id="quickStateGuitar">未完成</span>
+        </button>
+      </div>
+    </div>
+
+    <section class="card coach" id="coachCard">
+      <div class="card-head">
+        <h3 class="card-title">今天狀態如何？</h3>
+        <span class="muted">告訴我，我給你一份今天做得到的份量</span>
+      </div>
+
+      <div class="energy-row" id="energyRow" role="radiogroup" aria-label="今天的精神狀態"></div>
+
+      <div class="field" id="flagField" hidden>
+        <span class="field-label">還有什麼狀況嗎？（可複選，沒有就跳過）</span>
+        <div class="chips chips-flag" id="flagRow"></div>
+      </div>
+
+      <div id="coachResult" aria-live="polite"></div>
+    </section>
+
+    <section class="card empty-hero" id="emptyState" hidden>
+      <span class="empty-ico" aria-hidden="true">🌱</span>
+      <h2>還沒有任何紀錄</h2>
+      <p>這裡之後會長出你的連續天數、月曆熱力圖和趨勢線。現在它是空的，很正常 —— 從下面三件事挑一件開始就好。</p>
+      <ol class="empty-steps">
+        <li><b>設定每週目標</b><span>想一週練幾次？之後所有進度都是跟這個比。</span>
+          <button class="btn btn-ghost" type="button" data-go="settings">去設定</button></li>
+        <li><b>告訴我今天的狀態</b><span>累的日子也有對應的做法，不用等到有力氣才開始。</span>
+          <button class="btn btn-ghost" type="button" data-go="coach">選狀態</button></li>
+        <li><b>打第一次卡</b><span>今天做了什麼都算，五分鐘也算。</span>
+          <button class="btn btn-primary" type="button" data-go="log">開始打卡</button></li>
+      </ol>
+    </section>
+
+    <div class="grid-2" id="statsGrid">
+      <div class="card streak-card track-fit">
+        <h3 class="card-title">健身連續</h3>
+        <p class="streak-num"><span id="fitStreak">0</span><small>天</small></p>
+        <div class="streak-bar"><i id="fitBar"></i></div>
+        <p class="streak-note" id="fitNote2">　</p>
+        <p class="muted">最長紀錄 <strong id="fitBest">0</strong> 天 · 累積 <strong id="fitTotal">0</strong> 次 / <strong id="fitHours">0</strong> 小時</p>
+      </div>
+      <div class="card streak-card track-gtr">
+        <h3 class="card-title">吉他連續</h3>
+        <p class="streak-num"><span id="gtrStreak">0</span><small>天</small></p>
+        <div class="streak-bar"><i id="gtrBar"></i></div>
+        <p class="streak-note" id="gtrNote2">　</p>
+        <p class="muted">最長紀錄 <strong id="gtrBest">0</strong> 天 · 累積 <strong id="gtrTotal">0</strong> 次 / <strong id="gtrHours">0</strong> 小時</p>
+      </div>
+    </div>
+
+    <div class="card" id="weekCard">
+      <div class="card-head">
+        <h3 class="card-title">本週進度</h3>
+        <span class="muted" id="weekRange"></span>
+      </div>
+      <div id="weekBars"></div>
+    </div>
+
+    <div class="card" id="heatCard">
+      <div class="card-head">
+        <h3 class="card-title">月曆熱力圖</h3>
+        <div class="month-nav">
+          <button class="icon-btn" id="monthPrev" type="button" aria-label="上個月">‹</button>
+          <span id="monthLabel"></span>
+          <button class="icon-btn" id="monthNext" type="button" aria-label="下個月">›</button>
+        </div>
+      </div>
+      <div id="heatmap"></div>
+      <div class="legend">
+        <span class="legend-item"><i class="swatch sw-fit"></i>健身</span>
+        <span class="legend-item"><i class="swatch sw-gtr"></i>吉他</span>
+        <span class="legend-item muted">顏色越深代表練越久</span>
+      </div>
+    </div>
+
+    <div class="card" id="trendCard">
+      <div class="card-head">
+        <h3 class="card-title">近 12 週趨勢</h3>
+        <span class="muted">每週累積分鐘數</span>
+      </div>
+      <div id="trendChart"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <h3 class="card-title">成就徽章</h3>
+        <span class="muted"><span id="badgeCount">0</span> / <span id="badgeTotal">0</span></span>
+      </div>
+      <div class="badges" id="badges"></div>
+    </div>
+
+  </section>
+
+  <!-- ============ 打卡 ============ -->
+  <section class="view" id="view-log">
+    <div class="card">
+      <div class="card-head">
+        <h3 class="card-title">選擇日期</h3>
+        <div class="date-row">
+          <button class="btn btn-ghost" id="dayPrev" type="button">前一天</button>
+          <input type="date" id="logDate">
+          <button class="btn btn-ghost" id="dayNext" type="button">後一天</button>
+          <button class="btn btn-ghost" id="dayToday" type="button">回到今天</button>
+        </div>
+      </div>
+    </div>
+
+    <form id="logForm">
+      <div class="grid-2">
+
+        <fieldset class="card track-fit">
+          <legend class="card-title">🏋️ 健身</legend>
+          <label class="switch">
+            <input type="checkbox" id="fitDone">
+            <span>這天有做</span>
+          </label>
+
+          <div class="field">
+            <span class="field-label">訓練部位</span>
+            <div class="chips" id="fitParts"></div>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="fitMinutes">時長（分鐘）</label>
+            <div class="range-row">
+              <input type="range" id="fitMinutes" min="0" max="180" step="5" value="45">
+              <output id="fitMinutesOut">45</output>
+            </div>
+          </div>
+
+          <div class="field">
+            <span class="field-label">強度</span>
+            <div class="rating" id="fitIntensity" role="radiogroup" aria-label="健身強度"></div>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="fitNote">備註</label>
+            <textarea id="fitNote" rows="2" placeholder="今天深蹲破 PR…"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset class="card track-gtr">
+          <legend class="card-title">🎸 吉他</legend>
+          <label class="switch">
+            <input type="checkbox" id="gtrDone">
+            <span>這天有練</span>
+          </label>
+
+          <div class="field">
+            <span class="field-label">練習項目</span>
+            <div class="chips" id="gtrFocus"></div>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="gtrMinutes">時長（分鐘）</label>
+            <div class="range-row">
+              <input type="range" id="gtrMinutes" min="0" max="180" step="5" value="30">
+              <output id="gtrMinutesOut">30</output>
+            </div>
+          </div>
+
+          <div class="field">
+            <span class="field-label">今天練的曲子</span>
+            <div class="chips" id="gtrSongs"></div>
+            <p class="hint">曲目來自「曲目」分頁，去那裡新增後就會出現在這裡。</p>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="gtrNote">備註</label>
+            <textarea id="gtrNote" rows="2" placeholder="F 和弦轉換還是卡…"></textarea>
+          </div>
+        </fieldset>
+
+      </div>
+
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">儲存這天</button>
+        <button class="btn btn-ghost" type="button" id="logClear">清除這天的紀錄</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- ============ 吃什麼 ============ -->
+  <section class="view" id="view-food">
+
+    <div class="card now-card">
+      <div class="card-head">
+        <h3 class="card-title">現在該吃什麼？</h3>
+        <span class="muted" id="foodClock"></span>
+      </div>
+      <div class="slot-pick" id="slotPick" role="radiogroup" aria-label="下一餐"></div>
+      <div id="adviceBox" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <h3 class="card-title">今天吃了什麼</h3>
+        <div class="date-row">
+          <button class="btn btn-ghost" id="mealPrev" type="button">前一天</button>
+          <input type="date" id="mealDate">
+          <button class="btn btn-ghost" id="mealToday" type="button">今天</button>
+        </div>
+      </div>
+      <p class="hint">用平常講話的方式打就好，例如「兩顆蛋加一片吐司，配無糖豆漿」。沒吃就寫「沒吃」。</p>
+      <div id="mealInputs"></div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">今天的粗估</h3>
+      <div id="dayTally"></div>
+      <p class="hint">
+        這是<strong>關鍵字比對</strong>算出來的方向參考，不是營養分析，也不是醫療或營養建議。
+        同樣寫「雞腿便當」，店家給的份量可能差一倍。有體重控制或疾病需求請找營養師。
+      </p>
+    </div>
+
+  </section>
+
+  <!-- ============ 曲目 ============ -->
+  <section class="view" id="view-songs">
+    <div class="card">
+      <h3 class="card-title">新增曲目</h3>
+      <form id="songForm" class="song-form">
+        <input type="text" id="songTitle" placeholder="歌名（必填）" required>
+        <input type="text" id="songArtist" placeholder="演唱者">
+        <input type="text" id="songKey" placeholder="調性 如 G" maxlength="6">
+        <button class="btn btn-primary" type="submit">加入清單</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <h3 class="card-title">我的曲目</h3>
+        <div class="filter-row" id="songFilter">
+          <button class="pill is-active" data-filter="all" type="button">全部</button>
+          <button class="pill" data-filter="learning" type="button">練習中</button>
+          <button class="pill" data-filter="done" type="button">已完成</button>
+        </div>
+      </div>
+      <div id="songList"></div>
+    </div>
+  </section>
+
+  <!-- ============ 和弦工具 ============ -->
+  <section class="view" id="view-chords">
+
+    <div class="card">
+      <div class="card-head">
+        <h3 class="card-title">整首譜移調</h3>
+        <span class="muted">只會動和弦行，歌詞不會被改到</span>
+      </div>
+
+      <textarea id="sheetInput" class="sheet" rows="10" spellcheck="false" placeholder="把和弦譜貼進來，例如：
+
+C          G          Am         F
+煩惱什麼   明天的事   先放一邊   再說吧
+
+也支援行內格式：[C]煩惱什麼[G]明天的事"></textarea>
+
+      <div class="transpose-bar">
+        <button class="btn btn-ghost" id="semiDown" type="button">− 半音</button>
+        <span class="transpose-state">
+          移調 <strong id="semiLabel">0</strong>
+          <span class="muted" id="keyHint"></span>
+        </span>
+        <button class="btn btn-ghost" id="semiUp" type="button">＋ 半音</button>
+        <button class="btn btn-ghost" id="semiReset" type="button">歸零</button>
+        <button class="btn btn-ghost" id="sheetCopy" type="button">複製結果</button>
+        <button class="btn btn-ghost" id="sheetSample" type="button">放入範例</button>
+      </div>
+
+      <pre id="sheetOutput" class="sheet-out" aria-live="polite"></pre>
+
+      <div class="capo-box" id="capoBox"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <h3 class="card-title">這首用到的和弦</h3>
+        <span class="muted" id="usedCount"></span>
+      </div>
+      <div class="chord-grid" id="usedChords">
+        <p class="muted">上面貼譜之後，這裡會自動列出指法圖。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">單一和弦查詢</h3>
+      <div class="lookup-row">
+        <select id="lookupRoot" aria-label="根音"></select>
+        <select id="lookupQuality" aria-label="和弦性質"></select>
+      </div>
+      <div class="chord-grid" id="lookupResult"></div>
+      <h4 class="sub-title">各調對應表</h4>
+      <p class="hint">同一個和弦在不同調的「級數」位置，方便你套到別首歌。</p>
+      <div class="table-scroll"><table class="key-table" id="keyTable"></table></div>
+    </div>
+
+  </section>
+
+  <!-- ============ 設定 ============ -->
+  <section class="view" id="view-settings">
+    <div class="card">
+      <h3 class="card-title">每週目標</h3>
+      <div class="grid-2">
+        <div class="goal-box track-fit">
+          <h4>🏋️ 健身</h4>
+          <label>每週次數 <input type="number" id="goalFitSessions" min="0" max="14" step="1"></label>
+          <label>每次分鐘 <input type="number" id="goalFitMinutes" min="0" max="300" step="5"></label>
+        </div>
+        <div class="goal-box track-gtr">
+          <h4>🎸 吉他</h4>
+          <label>每週次數 <input type="number" id="goalGtrSessions" min="0" max="14" step="1"></label>
+          <label>每次分鐘 <input type="number" id="goalGtrMinutes" min="0" max="300" step="5"></label>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button class="btn btn-primary" id="goalSave" type="button">儲存目標</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">飲食建議的基準</h3>
+      <p class="hint">填了體重，「吃什麼」分頁才算得出今天的蛋白質目標。不填也能用，只是改用比較粗的判斷。</p>
+      <div class="goal-box">
+        <label>體重（公斤，選填） <input type="number" id="setWeight" min="0" max="250" step="0.5" placeholder="例如 70"></label>
+        <label>每公斤蛋白質目標（g） <input type="number" id="setProteinPerKg" min="0.8" max="3" step="0.1"></label>
+      </div>
+      <p class="hint">一般有在重訓的人常用 1.6～2.0 g/kg，預設 1.6。</p>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">和弦顯示偏好</h3>
+      <div class="radio-row">
+        <label><input type="radio" name="accidental" value="sharp"> 用升記號（C♯ D♯ F♯）</label>
+        <label><input type="radio" name="accidental" value="flat"> 用降記號（D♭ E♭ G♭）</label>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">自動備份到資料夾</h3>
+      <p class="hint">
+        選一個資料夾（建議選 iCloud Drive 或 Dropbox 裡面的夾），之後每次有變動就自動寫一份 JSON 進去，
+        不用自己按匯出。雲端硬碟會幫你同步到其他裝置。
+      </p>
+      <div id="backupStatus"></div>
+      <div class="form-actions" id="backupActions"></div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">資料備份</h3>
+      <p class="hint">資料只存在這台電腦的瀏覽器裡（localStorage）。換電腦、清除瀏覽資料都會不見，記得定期匯出備份。</p>
+      <div class="form-actions">
+        <button class="btn btn-primary" id="exportBtn" type="button">匯出 JSON 備份</button>
+        <label class="btn btn-ghost file-btn">
+          匯入備份
+          <input type="file" id="importFile" accept="application/json,.json" hidden>
+        </label>
+        <button class="btn btn-danger" id="resetBtn" type="button">清除全部資料</button>
+      </div>
+      <p class="hint" id="storageInfo"></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer wrap">
+  <p>純靜態 · 無後端 · 無追蹤。資料留在你自己的瀏覽器。</p>
+</footer>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="js/chords.js"></script>
+<script src="js/coach.js"></script>
+<script src="js/meals.js"></script>
+<script src="js/backup.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

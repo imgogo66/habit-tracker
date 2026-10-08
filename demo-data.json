@@ -1,0 +1,1939 @@
+{
+  "app": "dualtrack",
+  "exportedAt": "2026-10-08T05:45:00.000Z",
+  "data": {
+    "version": 1,
+    "settings": {
+      "goals": {
+        "fitness": {
+          "sessions": 4,
+          "minutes": 50
+        },
+        "guitar": {
+          "sessions": 6,
+          "minutes": 30
+        }
+      },
+      "accidental": "sharp",
+      "weight": 72,
+      "proteinPerKg": 1.7
+    },
+    "logs": {
+      "2026-07-13": {
+        "fitness": {
+          "done": true,
+          "minutes": 55,
+          "parts": [
+            "胸",
+            "手臂"
+          ],
+          "intensity": 4,
+          "note": ""
+        },
+        "guitar": {
+          "done": false,
+          "minutes": 0,
+          "focus": [],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-07-14": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 15,
+          "focus": [
+            "和弦轉換"
+          ],
+          "songs": [
+            "可愛女人",
+            "想自由"
+          ],
+          "note": ""
+        }
+      },
+      "2026-07-15": {
+        "fitness": {
+          "done": true,
+          "minutes": 60,
+          "parts": [
+            "腿"
+          ],
+          "intensity": 4,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 40,
+          "focus": [
+            "節奏刷扣",
+            "練歌"
+          ],
+          "songs": [
+            "小情歌"
+          ],
+          "note": "右手還是太用力"
+        }
+      },
+      "2026-07-16": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 20,
+          "focus": [
+            "指彈"
+          ],
+          "songs": [
+            "可愛女人"
+          ],
+          "note": "無名指不聽話"
+        }
+      },
+      "2026-07-17": {
+        "fitness": {
+          "done": true,
+          "minutes": 40,
+          "parts": [
+            "有氧",
+            "核心"
+          ],
+          "intensity": 4,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 25,
+          "focus": [
+            "樂理",
+            "聽歌抓歌"
+          ],
+          "songs": [
+            "想自由"
+          ],
+          "note": ""
+        }
+      },
+      "2026-07-18": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 30,
+          "focus": [
+            "練歌"
+          ],
+          "songs": [],
+          "note": "整首順過三遍"
+        }
+      },
+      "2026-07-20": {
+        "fitness": {
+          "done": true,
+          "minutes": 50,
+          "parts": [
+            "腿"
+          ],
+          "intensity": 2,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 35,
+          "focus": [
+            "和弦轉換"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-07-22": {
+        "fitness": {
+          "done": true,
+          "minutes": 40,
+          "parts": [
+            "有氧",
+            "核心"
+          ],
+          "intensity": 2,
+          "note": "今天只想動一動"
+        },
+        "guitar": {
+          "done": false,
+          "minutes": 0,
+          "focus": [],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-07-23": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 40,
+          "focus": [
+            "樂理",
+            "聽歌抓歌"
+          ],
+          "songs": [
+            "可愛女人"
+          ],
+          "note": ""
+        }
+      },
+      "2026-07-24": {
+        "fitness": {
+          "done": true,
+          "minutes": 60,
+          "parts": [
+            "背",
+            "手臂"
+          ],
+          "intensity": 4,
+          "note": "引體向上終於 8 下"
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 15,
+          "focus": [
+            "練歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-07-25": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 40,
+          "focus": [
+            "暖身音階",
+            "練歌"
+          ],
+          "songs": [
+            "想自由"
+          ],
+          "note": ""
+        }
+      },
+      "2026-07-27": {
+        "fitness": {
+          "done": true,
+          "minutes": 50,
+          "parts": [
+            "有氧",
+            "核心"
+          ],
+          "intensity": 5,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 20,
+          "focus": [
+            "節奏刷扣",
+            "練歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-07-28": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 35,
+          "focus": [
+            "指彈"
+          ],
+          "songs": [
+            "溫柔",
+            "晴天"
+          ],
+          "note": "Travis picking 慢速過一遍"
+        }
+      },
+      "2026-07-29": {
+        "fitness": {
+          "done": true,
+          "minutes": 70,
+          "parts": [
+            "背",
+            "手臂"
+          ],
+          "intensity": 4,
+          "note": "背快抽筋"
+        },
+        "guitar": {
+          "done": false,
+          "minutes": 0,
+          "focus": [],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-07-30": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 40,
+          "focus": [
+            "練歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-07-31": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 15,
+          "focus": [
+            "暖身音階",
+            "練歌"
+          ],
+          "songs": [
+            "Wonderwall"
+          ],
+          "note": ""
+        }
+      },
+      "2026-08-01": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 30,
+          "focus": [
+            "和弦轉換"
+          ],
+          "songs": [
+            "溫柔",
+            "小情歌"
+          ],
+          "note": ""
+        }
+      },
+      "2026-08-02": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 25,
+          "focus": [
+            "節奏刷扣",
+            "練歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-08-03": {
+        "fitness": {
+          "done": true,
+          "minutes": 60,
+          "parts": [
+            "背",
+            "手臂"
+          ],
+          "intensity": 3,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 30,
+          "focus": [
+            "指彈"
+          ],
+          "songs": [
+            "想自由"
+          ],
+          "note": ""
+        }
+      },
+      "2026-08-04": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 25,
+          "focus": [
+            "樂理",
+            "聽歌抓歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-08-05": {
+        "fitness": {
+          "done": true,
+          "minutes": 55,
+          "parts": [
+            "肩",
+            "核心"
+          ],
+          "intensity": 5,
+          "note": "肩推 40kg"
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 15,
+          "focus": [
+            "練歌"
+          ],
+          "songs": [
+            "Wonderwall"
+          ],
+          "note": "整首順過三遍"
+        }
+      },
+      "2026-08-06": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 40,
+          "focus": [
+            "暖身音階",
+            "練歌"
+          ],
+          "songs": [
+            "溫柔"
+          ],
+          "note": ""
+        }
+      },
+      "2026-08-07": {
+        "fitness": {
+          "done": true,
+          "minutes": 60,
+          "parts": [
+            "胸",
+            "手臂"
+          ],
+          "intensity": 2,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 25,
+          "focus": [
+            "和弦轉換"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-08-08": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 30,
+          "focus": [
+            "節奏刷扣",
+            "練歌"
+          ],
+          "songs": [
+            "晴天"
+          ],
+          "note": ""
+        }
+      },
+      "2026-08-09": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 20,
+          "focus": [
+            "指彈"
+          ],
+          "songs": [
+            "可愛女人"
+          ],
+          "note": ""
+        }
+      },
+      "2026-08-10": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 30,
+          "focus": [
+            "樂理",
+            "聽歌抓歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-08-11": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 30,
+          "focus": [
+            "練歌"
+          ],
+          "songs": [],
+          "note": "整首順過三遍"
+        }
+      },
+      "2026-08-13": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 35,
+          "focus": [
+            "和弦轉換"
+          ],
+          "songs": [],
+          "note": "F 轉 C 還是卡"
+        }
+      },
+      "2026-08-14": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 15,
+          "focus": [
+            "節奏刷扣",
+            "練歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-08-15": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 25,
+          "focus": [
+            "指彈"
+          ],
+          "songs": [
+            "Wonderwall",
+            "晴天"
+          ],
+          "note": ""
+        }
+      },
+      "2026-08-16": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 30,
+          "focus": [
+            "樂理",
+            "聽歌抓歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-08-17": {
+        "fitness": {
+          "done": true,
+          "minutes": 40,
+          "parts": [
+            "胸",
+            "手臂"
+          ],
+          "intensity": 5,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 15,
+          "focus": [
+            "練歌"
+          ],
+          "songs": [
+            "想自由"
+          ],
+          "note": "錄起來聽發現節奏會飄"
+        }
+      },
+      "2026-08-19": {
+        "fitness": {
+          "done": true,
+          "minutes": 40,
+          "parts": [
+            "腿"
+          ],
+          "intensity": 2,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 15,
+          "focus": [
+            "和弦轉換"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-08-20": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 40,
+          "focus": [
+            "節奏刷扣",
+            "練歌"
+          ],
+          "songs": [
+            "Wonderwall"
+          ],
+          "note": "切分刷法抓到感覺"
+        }
+      },
+      "2026-08-21": {
+        "fitness": {
+          "done": true,
+          "minutes": 60,
+          "parts": [
+            "有氧",
+            "核心"
+          ],
+          "intensity": 5,
+          "note": "跑步機 5K"
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 15,
+          "focus": [
+            "指彈"
+          ],
+          "songs": [
+            "溫柔",
+            "小情歌"
+          ],
+          "note": ""
+        }
+      },
+      "2026-08-22": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 40,
+          "focus": [
+            "樂理",
+            "聽歌抓歌"
+          ],
+          "songs": [
+            "小情歌",
+            "溫柔"
+          ],
+          "note": ""
+        }
+      },
+      "2026-08-23": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 15,
+          "focus": [
+            "練歌"
+          ],
+          "songs": [
+            "晴天"
+          ],
+          "note": ""
+        }
+      },
+      "2026-08-24": {
+        "fitness": {
+          "done": true,
+          "minutes": 70,
+          "parts": [
+            "腿"
+          ],
+          "intensity": 3,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 25,
+          "focus": [
+            "暖身音階",
+            "練歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-08-25": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 15,
+          "focus": [
+            "和弦轉換"
+          ],
+          "songs": [
+            "晴天"
+          ],
+          "note": ""
+        }
+      },
+      "2026-08-26": {
+        "fitness": {
+          "done": true,
+          "minutes": 60,
+          "parts": [
+            "有氧",
+            "核心"
+          ],
+          "intensity": 2,
+          "note": "飛輪 30 分鐘"
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 45,
+          "focus": [
+            "節奏刷扣",
+            "練歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-08-27": {
+        "fitness": {
+          "done": true,
+          "minutes": 40,
+          "parts": [
+            "胸",
+            "手臂"
+          ],
+          "intensity": 3,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 50,
+          "focus": [
+            "指彈"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-08-28": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 25,
+          "focus": [
+            "樂理",
+            "聽歌抓歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-08-29": {
+        "fitness": {
+          "done": true,
+          "minutes": 40,
+          "parts": [
+            "腿"
+          ],
+          "intensity": 3,
+          "note": "腿推加到 120kg"
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 25,
+          "focus": [
+            "練歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-08-30": {
+        "fitness": {
+          "done": true,
+          "minutes": 60,
+          "parts": [
+            "肩",
+            "核心"
+          ],
+          "intensity": 2,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 50,
+          "focus": [
+            "暖身音階",
+            "練歌"
+          ],
+          "songs": [
+            "可愛女人"
+          ],
+          "note": ""
+        }
+      },
+      "2026-08-31": {
+        "fitness": {
+          "done": true,
+          "minutes": 45,
+          "parts": [
+            "有氧",
+            "核心"
+          ],
+          "intensity": 4,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 35,
+          "focus": [
+            "和弦轉換"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-09-01": {
+        "fitness": {
+          "done": true,
+          "minutes": 70,
+          "parts": [
+            "胸",
+            "手臂"
+          ],
+          "intensity": 5,
+          "note": ""
+        },
+        "guitar": {
+          "done": false,
+          "minutes": 0,
+          "focus": [],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-09-02": {
+        "fitness": {
+          "done": true,
+          "minutes": 70,
+          "parts": [
+            "背",
+            "手臂"
+          ],
+          "intensity": 5,
+          "note": "引體向上終於 8 下"
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 30,
+          "focus": [
+            "指彈"
+          ],
+          "songs": [
+            "Wonderwall"
+          ],
+          "note": ""
+        }
+      },
+      "2026-09-03": {
+        "fitness": {
+          "done": true,
+          "minutes": 50,
+          "parts": [
+            "腿"
+          ],
+          "intensity": 5,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 45,
+          "focus": [
+            "樂理",
+            "聽歌抓歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-09-04": {
+        "fitness": {
+          "done": true,
+          "minutes": 45,
+          "parts": [
+            "肩",
+            "核心"
+          ],
+          "intensity": 2,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 25,
+          "focus": [
+            "練歌"
+          ],
+          "songs": [
+            "Wonderwall"
+          ],
+          "note": ""
+        }
+      },
+      "2026-09-05": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 25,
+          "focus": [
+            "暖身音階",
+            "練歌"
+          ],
+          "songs": [
+            "Wonderwall",
+            "晴天"
+          ],
+          "note": ""
+        }
+      },
+      "2026-09-07": {
+        "fitness": {
+          "done": true,
+          "minutes": 60,
+          "parts": [
+            "背",
+            "手臂"
+          ],
+          "intensity": 4,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 25,
+          "focus": [
+            "節奏刷扣",
+            "練歌"
+          ],
+          "songs": [
+            "晴天",
+            "溫柔"
+          ],
+          "note": ""
+        }
+      },
+      "2026-09-08": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 45,
+          "focus": [
+            "指彈"
+          ],
+          "songs": [
+            "晴天"
+          ],
+          "note": ""
+        }
+      },
+      "2026-09-09": {
+        "fitness": {
+          "done": true,
+          "minutes": 75,
+          "parts": [
+            "肩",
+            "核心"
+          ],
+          "intensity": 2,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 50,
+          "focus": [
+            "樂理",
+            "聽歌抓歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-09-10": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 50,
+          "focus": [
+            "練歌"
+          ],
+          "songs": [],
+          "note": "錄起來聽發現節奏會飄"
+        }
+      },
+      "2026-09-11": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 50,
+          "focus": [
+            "暖身音階",
+            "練歌"
+          ],
+          "songs": [
+            "小情歌"
+          ],
+          "note": ""
+        }
+      },
+      "2026-09-12": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 45,
+          "focus": [
+            "和弦轉換"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-09-13": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 25,
+          "focus": [
+            "節奏刷扣",
+            "練歌"
+          ],
+          "songs": [
+            "可愛女人",
+            "想自由"
+          ],
+          "note": ""
+        }
+      },
+      "2026-09-14": {
+        "fitness": {
+          "done": true,
+          "minutes": 55,
+          "parts": [
+            "肩",
+            "核心"
+          ],
+          "intensity": 4,
+          "note": "肩膀有點緊，收斂一點"
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 45,
+          "focus": [
+            "指彈"
+          ],
+          "songs": [
+            "晴天"
+          ],
+          "note": ""
+        }
+      },
+      "2026-09-15": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 40,
+          "focus": [
+            "樂理",
+            "聽歌抓歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-09-16": {
+        "fitness": {
+          "done": true,
+          "minutes": 50,
+          "parts": [
+            "胸",
+            "手臂"
+          ],
+          "intensity": 3,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 30,
+          "focus": [
+            "練歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-09-17": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 40,
+          "focus": [
+            "暖身音階",
+            "練歌"
+          ],
+          "songs": [
+            "想自由"
+          ],
+          "note": ""
+        }
+      },
+      "2026-09-18": {
+        "fitness": {
+          "done": true,
+          "minutes": 60,
+          "parts": [
+            "腿"
+          ],
+          "intensity": 2,
+          "note": "腿推加到 120kg"
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 50,
+          "focus": [
+            "和弦轉換"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-09-19": {
+        "fitness": {
+          "done": true,
+          "minutes": 75,
+          "parts": [
+            "肩",
+            "核心"
+          ],
+          "intensity": 3,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 35,
+          "focus": [
+            "節奏刷扣",
+            "練歌"
+          ],
+          "songs": [
+            "可愛女人"
+          ],
+          "note": ""
+        }
+      },
+      "2026-09-20": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 25,
+          "focus": [
+            "指彈"
+          ],
+          "songs": [
+            "Wonderwall"
+          ],
+          "note": ""
+        }
+      },
+      "2026-09-21": {
+        "fitness": {
+          "done": true,
+          "minutes": 65,
+          "parts": [
+            "胸",
+            "手臂"
+          ],
+          "intensity": 2,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 35,
+          "focus": [
+            "樂理",
+            "聽歌抓歌"
+          ],
+          "songs": [
+            "小情歌",
+            "想自由"
+          ],
+          "note": ""
+        }
+      },
+      "2026-09-22": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 50,
+          "focus": [
+            "練歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-09-23": {
+        "fitness": {
+          "done": true,
+          "minutes": 65,
+          "parts": [
+            "腿"
+          ],
+          "intensity": 2,
+          "note": "走路都在抖"
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 40,
+          "focus": [
+            "暖身音階",
+            "練歌"
+          ],
+          "songs": [
+            "可愛女人"
+          ],
+          "note": ""
+        }
+      },
+      "2026-09-24": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 35,
+          "focus": [
+            "和弦轉換"
+          ],
+          "songs": [
+            "溫柔",
+            "想自由"
+          ],
+          "note": ""
+        }
+      },
+      "2026-09-25": {
+        "fitness": {
+          "done": true,
+          "minutes": 60,
+          "parts": [
+            "有氧",
+            "核心"
+          ],
+          "intensity": 4,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 50,
+          "focus": [
+            "節奏刷扣",
+            "練歌"
+          ],
+          "songs": [
+            "小情歌"
+          ],
+          "note": ""
+        }
+      },
+      "2026-09-26": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 50,
+          "focus": [
+            "指彈"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-09-27": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 45,
+          "focus": [
+            "樂理",
+            "聽歌抓歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-09-28": {
+        "fitness": {
+          "done": true,
+          "minutes": 50,
+          "parts": [
+            "腿"
+          ],
+          "intensity": 2,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 25,
+          "focus": [
+            "練歌"
+          ],
+          "songs": [
+            "想自由",
+            "可愛女人"
+          ],
+          "note": ""
+        }
+      },
+      "2026-09-29": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 25,
+          "focus": [
+            "暖身音階",
+            "練歌"
+          ],
+          "songs": [],
+          "note": "晴天副歌終於接得起來"
+        }
+      },
+      "2026-09-30": {
+        "fitness": {
+          "done": true,
+          "minutes": 50,
+          "parts": [
+            "背",
+            "手臂"
+          ],
+          "intensity": 4,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 30,
+          "focus": [
+            "和弦轉換"
+          ],
+          "songs": [
+            "溫柔"
+          ],
+          "note": ""
+        }
+      },
+      "2026-10-01": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 35,
+          "focus": [
+            "節奏刷扣",
+            "練歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-10-02": {
+        "fitness": {
+          "done": true,
+          "minutes": 60,
+          "parts": [
+            "肩",
+            "核心"
+          ],
+          "intensity": 3,
+          "note": "肩推 40kg"
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 40,
+          "focus": [
+            "指彈"
+          ],
+          "songs": [
+            "想自由"
+          ],
+          "note": ""
+        }
+      },
+      "2026-10-03": {
+        "fitness": {
+          "done": true,
+          "minutes": 65,
+          "parts": [
+            "有氧",
+            "核心"
+          ],
+          "intensity": 4,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 45,
+          "focus": [
+            "樂理",
+            "聽歌抓歌"
+          ],
+          "songs": [],
+          "note": "抓了一首歌的和弦"
+        }
+      },
+      "2026-10-04": {
+        "fitness": {
+          "done": true,
+          "minutes": 45,
+          "parts": [
+            "胸",
+            "手臂"
+          ],
+          "intensity": 5,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 25,
+          "focus": [
+            "練歌"
+          ],
+          "songs": [
+            "可愛女人"
+          ],
+          "note": ""
+        }
+      },
+      "2026-10-05": {
+        "fitness": {
+          "done": true,
+          "minutes": 50,
+          "parts": [
+            "背",
+            "手臂"
+          ],
+          "intensity": 3,
+          "note": "引體向上終於 8 下"
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 30,
+          "focus": [
+            "暖身音階",
+            "練歌"
+          ],
+          "songs": [],
+          "note": ""
+        }
+      },
+      "2026-10-06": {
+        "fitness": {
+          "done": true,
+          "minutes": 55,
+          "parts": [
+            "腿"
+          ],
+          "intensity": 4,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 35,
+          "focus": [
+            "和弦轉換"
+          ],
+          "songs": [
+            "溫柔"
+          ],
+          "note": ""
+        }
+      },
+      "2026-10-07": {
+        "fitness": {
+          "done": true,
+          "minutes": 60,
+          "parts": [
+            "肩",
+            "核心"
+          ],
+          "intensity": 5,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 40,
+          "focus": [
+            "節奏刷扣",
+            "練歌"
+          ],
+          "songs": [],
+          "note": "右手還是太用力"
+        }
+      },
+      "2026-10-08": {
+        "fitness": {
+          "done": false,
+          "minutes": 0,
+          "parts": [],
+          "intensity": 0,
+          "note": ""
+        },
+        "guitar": {
+          "done": true,
+          "minutes": 45,
+          "focus": [
+            "指彈"
+          ],
+          "songs": [
+            "想自由"
+          ],
+          "note": ""
+        }
+      }
+    },
+    "moods": {
+      "2026-10-08": {
+        "energy": "tired",
+        "flags": [
+          "sore"
+        ]
+      },
+      "2026-10-07": {
+        "energy": "great",
+        "flags": []
+      },
+      "2026-10-06": {
+        "energy": "ok",
+        "flags": []
+      },
+      "2026-10-05": {
+        "energy": "ok",
+        "flags": [
+          "busy"
+        ]
+      },
+      "2026-10-04": {
+        "energy": "tired",
+        "flags": [
+          "sore"
+        ]
+      },
+      "2026-10-03": {
+        "energy": "ok",
+        "flags": []
+      },
+      "2026-10-02": {
+        "energy": "spent",
+        "flags": [
+          "busy",
+          "low"
+        ]
+      },
+      "2026-10-01": {
+        "energy": "great",
+        "flags": []
+      },
+      "2026-09-30": {
+        "energy": "ok",
+        "flags": []
+      },
+      "2026-09-29": {
+        "energy": "tired",
+        "flags": [
+          "fingers"
+        ]
+      },
+      "2026-09-28": {
+        "energy": "ok",
+        "flags": []
+      },
+      "2026-09-27": {
+        "energy": "great",
+        "flags": []
+      },
+      "2026-09-26": {
+        "energy": "ok",
+        "flags": [
+          "sore"
+        ]
+      },
+      "2026-09-25": {
+        "energy": "tired",
+        "flags": [
+          "busy"
+        ]
+      },
+      "2026-09-24": {
+        "energy": "ok",
+        "flags": []
+      }
+    },
+    "meals": {
+      "2026-10-08": {
+        "breakfast": "兩顆蛋、一片吐司，配無糖豆漿",
+        "lunch": "雞腿便當，沒什麼菜",
+        "snack": "無糖豆漿跟茶葉蛋"
+      },
+      "2026-10-07": {
+        "breakfast": "蛋餅加蛋跟無糖豆漿",
+        "lunch": "自助餐：烤鯖魚、燙青菜、半碗飯",
+        "snack": "一根香蕉",
+        "dinner": "雞胸肉配地瓜跟青菜"
+      },
+      "2026-10-06": {
+        "breakfast": "燕麥加牛奶跟一根香蕉",
+        "lunch": "雞胸肉沙拉加一顆蛋",
+        "snack": "一杯拿鐵跟餅乾",
+        "dinner": "火鍋，加了豆腐跟蛋"
+      },
+      "2026-10-05": {
+        "breakfast": "鮪魚三明治跟一杯拿鐵",
+        "lunch": "牛肉麵",
+        "dinner": "牛排配沙拉"
+      },
+      "2026-10-04": {
+        "breakfast": "水煮蛋兩顆、無糖優格",
+        "lunch": "滷肉飯跟燙青菜",
+        "dinner": "滷味：豆乾、海帶、青菜"
+      },
+      "2026-10-03": {
+        "breakfast": "沒吃，趕著出門",
+        "lunch": "水餃十顆配酸辣湯",
+        "dinner": "鹽酥雞跟珍奶，放縱一下"
+      },
+      "2026-10-02": {
+        "breakfast": "兩顆蛋、一片吐司，配無糖豆漿",
+        "lunch": "雞腿便當，沒什麼菜",
+        "snack": "無糖豆漿跟茶葉蛋"
+      },
+      "2026-10-01": {
+        "breakfast": "蛋餅加蛋跟無糖豆漿",
+        "lunch": "自助餐：烤鯖魚、燙青菜、半碗飯",
+        "dinner": "雞胸肉配地瓜跟青菜"
+      },
+      "2026-09-30": {
+        "breakfast": "燕麥加牛奶跟一根香蕉",
+        "lunch": "雞胸肉沙拉加一顆蛋",
+        "snack": "一杯拿鐵跟餅乾",
+        "dinner": "火鍋，加了豆腐跟蛋"
+      },
+      "2026-09-29": {
+        "breakfast": "鮪魚三明治跟一杯拿鐵",
+        "lunch": "牛肉麵",
+        "snack": "一盒毛豆"
+      }
+    },
+    "songs": [
+      {
+        "id": "s1",
+        "title": "晴天",
+        "artist": "周杰倫",
+        "key": "C",
+        "level": 5,
+        "status": "done"
+      },
+      {
+        "id": "s2",
+        "title": "溫柔",
+        "artist": "五月天",
+        "key": "G",
+        "level": 5,
+        "status": "done"
+      },
+      {
+        "id": "s3",
+        "title": "小情歌",
+        "artist": "蘇打綠",
+        "key": "D",
+        "level": 5,
+        "status": "done"
+      },
+      {
+        "id": "s4",
+        "title": "想自由",
+        "artist": "林宥嘉",
+        "key": "G",
+        "level": 5,
+        "status": "done"
+      },
+      {
+        "id": "s5",
+        "title": "Wonderwall",
+        "artist": "Oasis",
+        "key": "F#m",
+        "level": 5,
+        "status": "done"
+      },
+      {
+        "id": "s6",
+        "title": "可愛女人",
+        "artist": "周杰倫",
+        "key": "F",
+        "level": 3,
+        "status": "learning"
+      },
+      {
+        "id": "s7",
+        "title": "日不落",
+        "artist": "蔡依林",
+        "key": "A",
+        "level": 2,
+        "status": "learning"
+      },
+      {
+        "id": "s8",
+        "title": "Let It Be",
+        "artist": "The Beatles",
+        "key": "C",
+        "level": 4,
+        "status": "learning"
+      }
+    ],
+    "badges": {}
+  }
+}

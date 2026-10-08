@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" role="img" aria-label="雙軌練習誌">
+  <defs>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#A9703F"/>
+      <stop offset="1" stop-color="#6E4722"/>
+    </linearGradient>
+  </defs>
+  <rect width="80" height="80" rx="18" fill="url(#wood)"/>
+  <!-- 左：啞鈴 -->
+  <g stroke="#FBF5EA" stroke-width="5" stroke-linecap="round" fill="none">
+    <line x1="17" y1="25" x2="35" y2="25"/>
+    <line x1="14" y1="19" x2="14" y2="31"/>
+    <line x1="21" y1="17" x2="21" y2="33"/>
+    <line x1="38" y1="17" x2="38" y2="33"/>
+  </g>
+  <!-- 右下：吉他音孔與琴弦 -->
+  <circle cx="52" cy="52" r="13" fill="none" stroke="#3C6B52" stroke-width="5"/>
+  <g stroke="#FBF5EA" stroke-width="2.4" stroke-linecap="round">
+    <line x1="45" y1="38" x2="45" y2="66"/>
+    <line x1="52" y1="36" x2="52" y2="68"/>
+    <line x1="59" y1="38" x2="59" y2="66"/>
+  </g>
+</svg>
